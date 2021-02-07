@@ -20,5 +20,7 @@ defmodule Practice do
     Practice.Factors.prime(x)
   end
 
-  # TODO: Add a palindrome? function.
+  def palindrome?(x) do
+    Practice.Palindrome.palindrome?(x)
+  end
 end
