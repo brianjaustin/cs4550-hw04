@@ -9,6 +9,7 @@ export PATH="$PATH:$NODEBIN"
 echo "Building..."
 
 mix deps.get
+mix local.hex --force
 mix local.rebar --force
 mix compile
 (cd assets && npm install)
@@ -16,4 +17,4 @@ mix compile
 mix phx.digest
 
 echo "Generating release..."
-mix release
+mix release --force --overwrite
