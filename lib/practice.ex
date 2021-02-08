@@ -13,7 +13,11 @@ defmodule Practice do
 
   def calc(expr) do
     # This is more complex, delegate to lib/practice/calc.ex
-    Practice.Calc.calc(expr)
+    try do
+      Practice.Calc.calc(expr)
+    rescue
+      _ -> "Error evaluating expression"
+    end
   end
 
   def factor(x) do
