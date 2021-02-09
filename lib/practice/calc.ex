@@ -48,7 +48,8 @@ defmodule Practice.Calc do
   end
 
   # Functions to evaluate postfix arithmetic expression
-  # using reverse-Polish notation.
+  # using reverse-Polish notation. More info on RPN:
+  # https://brilliant.org/wiki/shunting-yard-algorithm/#reverse-polish.
   defp apply_op(op, [x, y | tail]) do
     [op.(y, x) | tail]
   end
