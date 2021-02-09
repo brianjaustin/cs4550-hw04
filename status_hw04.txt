@@ -1,0 +1,40 @@
+Please fill in answers to the questions below:
+
+
+1. What's your name?
+Brian Austin
+
+2. What hostname did you deploy your app to?
+hw04.baustin-neu.site
+
+3. What's the URL of your git for this assignment?
+https://github.com/brianjaustin/cs4550-hw04
+
+4. How much of the functionality did you complete?
+All. I verified by running the tests (including new ones
+for palindrome) and trying a few examples on the running application.
+
+5. Did you successfully deploy? If not, what's broken?
+Yes.
+
+6. How comfortable do you feel with Elixir now?
+I feel fairly comfortable with the language and navigating its docs.
+Interpreting compiler error messages still needs some work (it took me
+almost 10 minutes to figure out that "unexpected reserved word 'end'" actually
+meant I forgot to put `do` after my module name).
+
+7. Which parts of this assignment did you have trouble with, if any?
+I had some trouble thinking about the process for handling calculations
+in Reverse Polish Notation. In the end, the article I linked in that file
+helped a lot to visualize what goes on.
+
+
+And here's a list of tasks for grading comments. Just leave this here:
+ - Task 1
+ - Task 2
+ - Task 3
+ - Task 4
+ - Task 5
+ - Task 6
+ - Task 7
+ - Task 8
