@@ -85,13 +85,12 @@ defmodule Practice.Calc do
     iex> Practice.Calc.calc("5")
     5
 
-    iex> Practice.Calc.calc("1 + 3* 2/1")
+    iex> Practice.Calc.calc("1 + 3 * 2 / 1")
     7
   """
   def calc(expr) do
     expr
-    |> String.split(~r/[\+\-\*\/]/, include_captures: true)
-    |> Enum.map(&String.trim/1)
+    |> String.split(~r/\s+/)
     |> Enum.map(&tag_token/1)
     |> to_postfix([], [])
     |> Enum.reduce([], &eval/2)
